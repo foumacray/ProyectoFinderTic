@@ -36,8 +36,10 @@
 	// Do any additional setup after loading the view.
     _scroll.contentSize=CGSizeMake(320, 760);
     
-        _titulo.text=[_arrayDetalle objectAtIndex:1];
-    
+        _titulo.text=[_arrayDetalle objectAtIndex:0];
+    _descripcion.text=[_arrayDetalle objectAtIndex:1];
+    _inicio.text=[_arrayDetalle objectAtIndex:2];
+    _fin.text=[_arrayDetalle objectAtIndex:3];
     
     
     

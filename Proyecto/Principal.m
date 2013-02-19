@@ -39,8 +39,11 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    BOOL logica = [self cargarDatos];
-      
+    bool logica = [self cargarDatos];
+    if (!logica) {
+        UIAlertView *alerta= [[UIAlertView alloc]initWithTitle:@"PROBLEMA" message:@"No se pudo cargar los datos" delegate:self cancelButtonTitle:@"ok" otherButtonTitles: nil];
+        [alerta show];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -136,10 +139,14 @@
     if ([[segue identifier] isEqualToString:@"aDetalle"]) {
        
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        Detalle *detalle = [segue destinationViewController];
-        [detalle.arrayDetalle addObject:[[[contenidoWeb getComponentes]getTitulo] objectAtIndex:indexPath.row]];
-         NSLog(@"aki");
         
+        Detalle *detalle = [segue destinationViewController];
+        detalle.arrayDetalle=[[NSMutableArray alloc]init];
+        [detalle.arrayDetalle addObject:[[[contenidoWeb getComponentes]getTitulo] objectAtIndex:indexPath.row]];
+         [detalle.arrayDetalle addObject:[[[contenidoWeb getComponentes]getDescripcion] objectAtIndex:indexPath.row]];
+         [detalle.arrayDetalle addObject:[[[contenidoWeb getComponentes]getInicio] objectAtIndex:indexPath.row]];
+        [detalle.arrayDetalle addObject:[[[contenidoWeb getComponentes]getFin] objectAtIndex:indexPath.row]];
+        [detalle.arrayDetalle addObject:[[[contenidoWeb getComponentes]getLocalizacion] objectAtIndex:indexPath.row]];
     }
 }
 @end
