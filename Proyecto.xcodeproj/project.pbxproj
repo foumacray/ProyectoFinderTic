@@ -28,6 +28,8 @@
 		3DF3E1C116C5911400ECAC8F /* backgroundcelda.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DF3E1C016C5911400ECAC8F /* backgroundcelda.png */; };
 		3DF8C63416CEA8B3007E2115 /* LimpiarXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF8C63316CEA8B3007E2115 /* LimpiarXML.m */; };
 		EBC8E5DF16D6265C00591A19 /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC8E5DE16D6265C00591A19 /* Parser.m */; };
+		EBF55A8316D7ABBB008B4D2B /* ConversorUTMLatLong.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF55A8216D7ABBB008B4D2B /* ConversorUTMLatLong.m */; };
+		EBF55A8716D7AE34008B4D2B /* VisualizacionMapa.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF55A8616D7AE34008B4D2B /* VisualizacionMapa.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,10 @@
 		3DF8C63316CEA8B3007E2115 /* LimpiarXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LimpiarXML.m; sourceTree = "<group>"; };
 		EBC8E5DD16D6265C00591A19 /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
 		EBC8E5DE16D6265C00591A19 /* Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parser.m; sourceTree = "<group>"; };
+		EBF55A8116D7ABBB008B4D2B /* ConversorUTMLatLong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversorUTMLatLong.h; sourceTree = "<group>"; };
+		EBF55A8216D7ABBB008B4D2B /* ConversorUTMLatLong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversorUTMLatLong.m; sourceTree = "<group>"; };
+		EBF55A8516D7AE34008B4D2B /* VisualizacionMapa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisualizacionMapa.h; sourceTree = "<group>"; };
+		EBF55A8616D7AE34008B4D2B /* VisualizacionMapa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisualizacionMapa.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +175,10 @@
 			children = (
 				3DF3E1BB16C585B800ECAC8F /* Detalle.h */,
 				3DF3E1B916C5858700ECAC8F /* Detalle.m */,
+				EBF55A8116D7ABBB008B4D2B /* ConversorUTMLatLong.h */,
+				EBF55A8216D7ABBB008B4D2B /* ConversorUTMLatLong.m */,
+				EBF55A8516D7AE34008B4D2B /* VisualizacionMapa.h */,
+				EBF55A8616D7AE34008B4D2B /* VisualizacionMapa.m */,
 			);
 			name = detalle;
 			sourceTree = "<group>";
@@ -250,6 +260,8 @@
 				3D095DA816CD6F410053A964 /* ComponentesXML.m in Sources */,
 				3DF8C63416CEA8B3007E2115 /* LimpiarXML.m in Sources */,
 				EBC8E5DF16D6265C00591A19 /* Parser.m in Sources */,
+				EBF55A8316D7ABBB008B4D2B /* ConversorUTMLatLong.m in Sources */,
+				EBF55A8716D7AE34008B4D2B /* VisualizacionMapa.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
