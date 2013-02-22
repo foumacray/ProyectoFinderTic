@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D095DA416CD6CB10053A964 /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D095DA316CD6CB10053A964 /* Parser.m */; };
 		3D095DA816CD6F410053A964 /* ComponentesXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D095DA716CD6F410053A964 /* ComponentesXML.m */; };
 		3D0C1B0816C9831600654E1F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0C1B0716C9831600654E1F /* CoreLocation.framework */; };
 		3D0C1B0B16C9831C00654E1F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0C1B0A16C9831C00654E1F /* MapKit.framework */; };
@@ -28,11 +27,10 @@
 		3DF3E1BF16C58C8400ECAC8F /* fondoboton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DF3E1BE16C58C8400ECAC8F /* fondoboton.png */; };
 		3DF3E1C116C5911400ECAC8F /* backgroundcelda.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DF3E1C016C5911400ECAC8F /* backgroundcelda.png */; };
 		3DF8C63416CEA8B3007E2115 /* LimpiarXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF8C63316CEA8B3007E2115 /* LimpiarXML.m */; };
+		EBC8E5DF16D6265C00591A19 /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC8E5DE16D6265C00591A19 /* Parser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3D095DA216CD6CB10053A964 /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Parser.h; path = ../../desarrollo/Parser/Parser.h; sourceTree = "<group>"; };
-		3D095DA316CD6CB10053A964 /* Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Parser.m; path = ../../desarrollo/Parser/Parser.m; sourceTree = "<group>"; };
 		3D095DA616CD6F410053A964 /* ComponentesXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComponentesXML.h; sourceTree = "<group>"; };
 		3D095DA716CD6F410053A964 /* ComponentesXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComponentesXML.m; sourceTree = "<group>"; };
 		3D0C1B0716C9831600654E1F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -62,6 +60,8 @@
 		3DF3E1C016C5911400ECAC8F /* backgroundcelda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundcelda.png; sourceTree = "<group>"; };
 		3DF8C63216CEA8B3007E2115 /* LimpiarXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LimpiarXML.h; sourceTree = "<group>"; };
 		3DF8C63316CEA8B3007E2115 /* LimpiarXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LimpiarXML.m; sourceTree = "<group>"; };
+		EBC8E5DD16D6265C00591A19 /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
+		EBC8E5DE16D6265C00591A19 /* Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +112,8 @@
 		3DF3E18C16C581E200ECAC8F /* Proyecto */ = {
 			isa = PBXGroup;
 			children = (
-				3D095DA216CD6CB10053A964 /* Parser.h */,
-				3D095DA316CD6CB10053A964 /* Parser.m */,
+				EBC8E5DD16D6265C00591A19 /* Parser.h */,
+				EBC8E5DE16D6265C00591A19 /* Parser.m */,
 				3DF3E1AB16C5837E00ECAC8F /* detalle */,
 				3DF3E1AA16C5835200ECAC8F /* principal */,
 				3DF3E1A916C581F500ECAC8F /* rsources */,
@@ -247,9 +247,9 @@
 				3DF3E1B216C5840800ECAC8F /* Principal.m in Sources */,
 				3DF3E1B516C5843000ECAC8F /* Celda.m in Sources */,
 				3DF3E1BA16C5858700ECAC8F /* Detalle.m in Sources */,
-				3D095DA416CD6CB10053A964 /* Parser.m in Sources */,
 				3D095DA816CD6F410053A964 /* ComponentesXML.m in Sources */,
 				3DF8C63416CEA8B3007E2115 /* LimpiarXML.m in Sources */,
+				EBC8E5DF16D6265C00591A19 /* Parser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -42,12 +42,16 @@
     _fin.text=[_arrayDetalle objectAtIndex:3];
     _longitud.text=[[self separarCoordenadas:[_arrayDetalle objectAtIndex:4]] objectAtIndex:0];
     _latitud.text=[[self separarCoordenadas:[_arrayDetalle objectAtIndex:4]] objectAtIndex:1];
-    CLLocationCoordinate2D pos =[self coordenadasLatitud:_longitud.text coordenadasLongitud:_latitud.text];
-    MKCoordinateSpan zoom={0.1,0.1};
-    
+    CLLocationCoordinate2D pos =[self coordenadasLatitud:_latitud.text coordenadasLongitud:_longitud.text];
+    MKCoordinateSpan zoom={0.001,0.001};
     MKCoordinateRegion region={pos,zoom};
-    
     [_mapa setRegion:region];
+    MKPointAnnotation *punto=[MKPointAnnotation new];
+    [punto setCoordinate:pos];
+    [punto setTitle:_titulo.text];
+    [_mapa addAnnotation:punto];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -59,8 +63,8 @@
     // NSRange incidencia = [coordenadasJuntas rangeOfString:@" "];
     NSMutableArray *miArray=[NSMutableArray new];
 
-    [miArray addObject:[coordenadasJuntas substringFromIndex:[coordenadasJuntas rangeOfString:@" "].location+1]];
     [miArray addObject:[coordenadasJuntas substringToIndex:[coordenadasJuntas rangeOfString:@" "].location-1]];
+    [miArray addObject:[coordenadasJuntas substringFromIndex:[coordenadasJuntas rangeOfString:@" "].location+1]];
     return miArray;
 }
 - (CLLocationCoordinate2D)coordenadasLatitud:(NSString *)latitud coordenadasLongitud:(NSString *)longitud
@@ -104,11 +108,12 @@
     float Frad = FI+(1+(Ee*(var9))-(1.500)*Ee*sinf(FI)*cosf(FI)*(Tau-FI))*(Tau-FI);
     float LongitudFinalY = +(DeltaLambda/PI)*180+mericentral;
     // Correción De valores, debido al excedente de decimales de float y double, afecta sobre todo al eje Y.
-     LongitudFinalY = LongitudFinalY - 0.001151;
+    LongitudFinalY = LongitudFinalY - 0.016781;
+    
     NSLog(@"Cordenada Y = %f",LongitudFinalY);
     float LatitudFinalX = +(Frad/PI)*180;
     NSLog(@"Cordenada X = %f",LatitudFinalX);
-    
+    LatitudFinalX-=0.186159;
     CLLocationCoordinate2D coordenadasFinal = {.latitude=LatitudFinalX, .longitude=LongitudFinalY};
     return coordenadasFinal;
 }
