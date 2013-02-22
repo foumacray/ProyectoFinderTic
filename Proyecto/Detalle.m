@@ -1,10 +1,3 @@
-//
-//  Detalle.m
-//  Proyecto
-//
-//  Created by Alumno 6 on 08/02/13.
-//  Copyright (c) 2013 Alumno 2. All rights reserved.
-//
 
 #import "Detalle.h"
 #import "VisualizacionMapa.h"
@@ -22,12 +15,11 @@
 @synthesize latitud=_latitud;
 @synthesize longitud=_longitud;
 @synthesize arrayDetalle=_arrayDetalle;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
+    if (self) {}
     return self;
 }
 
@@ -43,16 +35,8 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
--(NSMutableArray*)separarCoordenadas:(NSString*)coordenadasJuntas{
-    // NSRange incidencia = [coordenadasJuntas rangeOfString:@" "];
-    NSMutableArray *miArray=[NSMutableArray new];
 
-    [miArray addObject:[coordenadasJuntas substringToIndex:[coordenadasJuntas rangeOfString:@" "].location-1]];
-    [miArray addObject:[coordenadasJuntas substringFromIndex:[coordenadasJuntas rangeOfString:@" "].location+1]];
-    return miArray;
-}
 -(void) asignarValoresLabels{
     _titulo.text=[_arrayDetalle objectAtIndex:0];
     _descripcion.text=[_arrayDetalle objectAtIndex:1];
@@ -60,5 +44,12 @@
     _fin.text=[_arrayDetalle objectAtIndex:3];
     _longitud.text=[[self separarCoordenadas:[_arrayDetalle objectAtIndex:4]] objectAtIndex:0];
     _latitud.text=[[self separarCoordenadas:[_arrayDetalle objectAtIndex:4]] objectAtIndex:1];
+}
+
+-(NSMutableArray*)separarCoordenadas:(NSString*)coordenadasJuntas{
+    NSMutableArray *miArray=[NSMutableArray new];
+    [miArray addObject:[coordenadasJuntas substringToIndex:[coordenadasJuntas rangeOfString:@" "].location-1]];
+    [miArray addObject:[coordenadasJuntas substringFromIndex:[coordenadasJuntas rangeOfString:@" "].location+1]];
+    return miArray;
 }
 @end
