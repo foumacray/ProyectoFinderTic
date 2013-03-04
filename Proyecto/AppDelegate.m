@@ -13,6 +13,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [self identificarDispositivo];
     return YES;
 }
 							
@@ -42,5 +43,23 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
+-(void)identificarDispositivo{ // elegir que storyboard queremos usar
+    if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPhone) { // diferencia entre iphone o ipad
+        CGSize iosDeviceScreenSize = [[UIScreen mainScreen]bounds].size;
+        if (iosDeviceScreenSize.height == 960/2) {
+            UIStoryboard *dispositivo4=[UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil]; //1º enlazar el storyboard
+            UIViewController *controlador4 = [dispositivo4 instantiateInitialViewController];           //2º  crear un controlador
+            self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];                //3º  definir la ventana
+            self.window.rootViewController = controlador4;                                              //4º asignar el controlador de la ventana
+            [self.window makeKeyAndVisible];                                                            //5º arrancarla
+        }
+        else if(iosDeviceScreenSize.height == 568) {
+            UIStoryboard *dispositivo4=[UIStoryboard storyboardWithName:@"MainStoryBoard2" bundle:nil]; //1º enlazar el storyboard
+            UIViewController *controlador4 = [dispositivo4 instantiateInitialViewController];           //2º  crear un controlador
+            self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];                //3º  definir la ventana
+            self.window.rootViewController = controlador4;                                              //4º asignar el controlador de la ventana
+            [self.window makeKeyAndVisible];                                                            //5º arrancarla
+        }
+    }
+}
 @end

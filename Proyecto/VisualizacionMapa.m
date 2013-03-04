@@ -13,7 +13,7 @@
     
     ConversorUTMLatLong *conversor=[ConversorUTMLatLong new];
     CLLocationCoordinate2D posicion =[conversor coordenadasLatitud:latitud coordenadasLongitud:longitud];
-    MKCoordinateSpan zoom={0.001,0.001};
+    MKCoordinateSpan zoom={0.0075,0.0075};
     MKCoordinateRegion region={posicion,zoom};
     [mapa setRegion:region];
     MKPointAnnotation *punto=[MKPointAnnotation new];

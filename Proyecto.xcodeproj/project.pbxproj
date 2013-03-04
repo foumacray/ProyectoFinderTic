@@ -10,6 +10,12 @@
 		3D095DA816CD6F410053A964 /* ComponentesXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D095DA716CD6F410053A964 /* ComponentesXML.m */; };
 		3D0C1B0816C9831600654E1F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0C1B0716C9831600654E1F /* CoreLocation.framework */; };
 		3D0C1B0B16C9831C00654E1F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0C1B0A16C9831C00654E1F /* MapKit.framework */; };
+		3D160F0916E50C010056E70D /* MainStoryBoard2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D160F0816E50C010056E70D /* MainStoryBoard2.storyboard */; };
+		3D160F0E16E5203E0056E70D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D160F0D16E5203E0056E70D /* Default@2x.png */; };
+		3D160F1016E520470056E70D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D160F0F16E520470056E70D /* Default-568h@2x.png */; };
+		3D160F1216E520870056E70D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D160F1116E520870056E70D /* Default.png */; };
+		3D160F1616E5244E0056E70D /* CargandoApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D160F1516E5244E0056E70D /* CargandoApp.m */; };
+		3D160F1A16E532DE0056E70D /* Configuracion.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D160F1916E532DE0056E70D /* Configuracion.m */; };
 		3DF3E18716C581E200ECAC8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF3E18616C581E200ECAC8F /* UIKit.framework */; };
 		3DF3E18916C581E200ECAC8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF3E18816C581E200ECAC8F /* Foundation.framework */; };
 		3DF3E18B16C581E200ECAC8F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF3E18A16C581E200ECAC8F /* CoreGraphics.framework */; };
@@ -37,6 +43,14 @@
 		3D095DA716CD6F410053A964 /* ComponentesXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComponentesXML.m; sourceTree = "<group>"; };
 		3D0C1B0716C9831600654E1F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		3D0C1B0A16C9831C00654E1F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3D160F0816E50C010056E70D /* MainStoryBoard2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryBoard2.storyboard; sourceTree = "<group>"; };
+		3D160F0D16E5203E0056E70D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3D160F0F16E520470056E70D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3D160F1116E520870056E70D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3D160F1416E5244E0056E70D /* CargandoApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CargandoApp.h; sourceTree = "<group>"; };
+		3D160F1516E5244E0056E70D /* CargandoApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CargandoApp.m; sourceTree = "<group>"; };
+		3D160F1816E532DE0056E70D /* Configuracion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuracion.h; sourceTree = "<group>"; };
+		3D160F1916E532DE0056E70D /* Configuracion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuracion.m; sourceTree = "<group>"; };
 		3DF3E18216C581E200ECAC8F /* Proyecto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proyecto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF3E18616C581E200ECAC8F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3DF3E18816C581E200ECAC8F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -86,9 +100,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D160F0B16E50D690056E70D /* storyBoards */ = {
+			isa = PBXGroup;
+			children = (
+				3DF3E19E16C581E300ECAC8F /* MainStoryboard.storyboard */,
+				3D160F0816E50C010056E70D /* MainStoryBoard2.storyboard */,
+			);
+			name = storyBoards;
+			sourceTree = "<group>";
+		};
+		3D160F0C16E50DE20056E70D /* utilidadesWeb */ = {
+			isa = PBXGroup;
+			children = (
+				EBC8E5DD16D6265C00591A19 /* Parser.h */,
+				EBC8E5DE16D6265C00591A19 /* Parser.m */,
+				3DF8C63216CEA8B3007E2115 /* LimpiarXML.h */,
+				3DF8C63316CEA8B3007E2115 /* LimpiarXML.m */,
+				3D095DA616CD6F410053A964 /* ComponentesXML.h */,
+				3D095DA716CD6F410053A964 /* ComponentesXML.m */,
+			);
+			name = utilidadesWeb;
+			sourceTree = "<group>";
+		};
+		3D160F1316E524140056E70D /* cargarApp */ = {
+			isa = PBXGroup;
+			children = (
+				3D160F1416E5244E0056E70D /* CargandoApp.h */,
+				3D160F1516E5244E0056E70D /* CargandoApp.m */,
+			);
+			name = cargarApp;
+			sourceTree = "<group>";
+		};
+		3D160F1716E532C60056E70D /* configuracionMapa */ = {
+			isa = PBXGroup;
+			children = (
+				3D160F1816E532DE0056E70D /* Configuracion.h */,
+				3D160F1916E532DE0056E70D /* Configuracion.m */,
+			);
+			name = configuracionMapa;
+			sourceTree = "<group>";
+		};
 		3DF3E17716C581E200ECAC8F = {
 			isa = PBXGroup;
 			children = (
+				3D160F1116E520870056E70D /* Default.png */,
+				3D160F0F16E520470056E70D /* Default-568h@2x.png */,
+				3D160F0D16E5203E0056E70D /* Default@2x.png */,
 				3D0C1B0A16C9831C00654E1F /* MapKit.framework */,
 				3D0C1B0716C9831600654E1F /* CoreLocation.framework */,
 				3DF3E18C16C581E200ECAC8F /* Proyecto */,
@@ -118,19 +175,15 @@
 		3DF3E18C16C581E200ECAC8F /* Proyecto */ = {
 			isa = PBXGroup;
 			children = (
-				EBC8E5DD16D6265C00591A19 /* Parser.h */,
-				EBC8E5DE16D6265C00591A19 /* Parser.m */,
+				3D160F0B16E50D690056E70D /* storyBoards */,
+				3D160F1316E524140056E70D /* cargarApp */,
+				3D160F0C16E50DE20056E70D /* utilidadesWeb */,
 				3DF3E1AB16C5837E00ECAC8F /* detalle */,
 				3DF3E1AA16C5835200ECAC8F /* principal */,
 				3DF3E1A916C581F500ECAC8F /* rsources */,
-				3DF3E19E16C581E300ECAC8F /* MainStoryboard.storyboard */,
 				3DF3E19516C581E200ECAC8F /* AppDelegate.h */,
 				3DF3E19616C581E200ECAC8F /* AppDelegate.m */,
 				3DF3E18D16C581E200ECAC8F /* Supporting Files */,
-				3D095DA616CD6F410053A964 /* ComponentesXML.h */,
-				3D095DA716CD6F410053A964 /* ComponentesXML.m */,
-				3DF8C63216CEA8B3007E2115 /* LimpiarXML.h */,
-				3DF8C63316CEA8B3007E2115 /* LimpiarXML.m */,
 			);
 			path = Proyecto;
 			sourceTree = "<group>";
@@ -173,6 +226,7 @@
 		3DF3E1AB16C5837E00ECAC8F /* detalle */ = {
 			isa = PBXGroup;
 			children = (
+				3D160F1716E532C60056E70D /* configuracionMapa */,
 				3DF3E1BB16C585B800ECAC8F /* Detalle.h */,
 				3DF3E1B916C5858700ECAC8F /* Detalle.m */,
 				EBF55A8116D7ABBB008B4D2B /* ConversorUTMLatLong.h */,
@@ -242,6 +296,10 @@
 				3DF3E1BD16C58B5500ECAC8F /* advertencia.png in Resources */,
 				3DF3E1BF16C58C8400ECAC8F /* fondoboton.png in Resources */,
 				3DF3E1C116C5911400ECAC8F /* backgroundcelda.png in Resources */,
+				3D160F0916E50C010056E70D /* MainStoryBoard2.storyboard in Resources */,
+				3D160F0E16E5203E0056E70D /* Default@2x.png in Resources */,
+				3D160F1016E520470056E70D /* Default-568h@2x.png in Resources */,
+				3D160F1216E520870056E70D /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +320,8 @@
 				EBC8E5DF16D6265C00591A19 /* Parser.m in Sources */,
 				EBF55A8316D7ABBB008B4D2B /* ConversorUTMLatLong.m in Sources */,
 				EBF55A8716D7AE34008B4D2B /* VisualizacionMapa.m in Sources */,
+				3D160F1616E5244E0056E70D /* CargandoApp.m in Sources */,
+				3D160F1A16E532DE0056E70D /* Configuracion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
