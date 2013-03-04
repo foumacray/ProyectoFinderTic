@@ -1,18 +1,11 @@
-//
-//  LimpiarXML.m
-//  Proyecto
-//
-//  Created by Alumno 6 on 15/02/13.
-//  Copyright (c) 2013 Alumno 2. All rights reserved.
-//
 
 #import "LimpiarXML.h"
 
-
 @implementation LimpiarXML
+
 - (id)init:(NSMutableString*)ristra{
     if (self = [super init]){
-        miRistra=ristra;
+        stringContenido=ristra;
         componentes =[[ComponentesXML alloc]init];
             }
     return self;
@@ -20,10 +13,9 @@
 
 -(NSMutableString *)limpiar{
     NSString  *modificada;
-    NSRange incidencia = [miRistra rangeOfString:@"<title>"];
+    NSRange incidencia = [stringContenido rangeOfString:@"<title>"];
     incidencia.location+=7;
-    modificada=[[NSString alloc]initWithString:[miRistra substringFromIndex:incidencia.location] ];
-   
+    modificada=[[NSString alloc]initWithString:[stringContenido substringFromIndex:incidencia.location] ];
     incidencia= [modificada rangeOfString:@"<title>"];
     incidencia.location+=7;
     modificada=[[NSMutableString alloc]initWithString:[modificada substringFromIndex:incidencia.location] ];
@@ -86,7 +78,7 @@
         incidencia.location+=7;
     }
         
-    return miRistra;
+    return stringContenido;
 }
 
 - (ComponentesXML *)getComponentes{

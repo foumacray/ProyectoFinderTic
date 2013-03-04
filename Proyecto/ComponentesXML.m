@@ -21,25 +21,25 @@
     }
     return self;
 }
-- (void)anadirElemento:(NSString *)cadena array:(NSString *)ristra{
-    if ([ristra isEqualToString:@"titulo"]) {
-        [titulo addObject:cadena];
+- (void)anadirElemento:(NSString *)dato array:(NSString *)aQueVector{
+    if ([aQueVector isEqualToString:@"titulo"]) {
+        [titulo addObject:dato];
     }
-    if ([ristra isEqualToString:@"inicio"]) {
-        [inicio addObject:cadena];
+    if ([aQueVector isEqualToString:@"inicio"]) {
+        [inicio addObject:dato];
     }
-    if ([ristra isEqualToString:@"fin"]) {
-        [fin addObject:cadena];
+    if ([aQueVector isEqualToString:@"fin"]) {
+        [fin addObject:dato];
     }
-    if ([ristra isEqualToString:@"descripcion"]) {
-        [descripcion addObject:cadena];
+    if ([aQueVector isEqualToString:@"descripcion"]) {
+        [descripcion addObject:dato];
     }
-    if ([ristra isEqualToString:@"fechaPublicacion"]) {
-        NSString *ristraTratada = [[NSString alloc]initWithString:[cadena substringToIndex:10]];
+    if ([aQueVector isEqualToString:@"fechaPublicacion"]) {
+        NSString *ristraTratada = [[NSString alloc]initWithString:[dato substringToIndex:10]];
         [fechaPublicacion addObject:ristraTratada];
     }
-    if ([ristra isEqualToString:@"localizacion"]) {
-        [localizacion addObject:cadena];
+    if ([aQueVector isEqualToString:@"localizacion"]) {
+        [localizacion addObject:dato];
     }
 }
 -(NSMutableArray*) getTitulo{

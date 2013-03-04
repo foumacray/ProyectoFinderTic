@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "ComponentesXML.h"
 @interface LimpiarXML : NSObject{
-    NSMutableString *miRistra;
+    NSMutableString *stringContenido;
     ComponentesXML *componentes;
 }
 -(NSMutableString *)limpiar;

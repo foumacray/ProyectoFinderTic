@@ -18,7 +18,7 @@
    
 }
 -(id) init;
--(void) anadirElemento: (NSString*)cadena array:(NSString*)ristra;
+-(void) anadirElemento: (NSString*)dato array:(NSString*)aQueVector;
 -(NSMutableArray*) getTitulo;
 -(NSMutableArray*) getInicio;
 -(NSMutableArray*) getFin;
